@@ -1,0 +1,210 @@
+@import url(variables.css);
+
+.grid_container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template: 48px min-content min-content 284px / repeat(4, 1fr);
+    gap: 40px;
+    background-color: var(--mainBackgroundColor);
+    padding: 32px 20px 32px 20px;
+
+}
+
+/* header  */
+.header {
+    /* background-color: rgb(255, 255, 255); */
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_left_side {
+    display: flex;
+    column-gap: 212px;
+    align-items: center;
+}
+
+.header_navigation {
+    display: flex;
+    column-gap: 84px;
+}
+
+.header_list {
+    color: var(--MainTextColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--SecondaryFonSize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_right_side {
+    display: flex;
+    column-gap: 32px;
+    align-items: center;
+}
+
+.search_bar {
+    display: flex;
+    column-gap: 100px;
+    padding: 8px 20px 7px 20px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 1.52px 3px 3px -0.8px rgba(0, 0, 0, 0.20) inset, 0px -0.3px 1px 0px rgba(223, 217, 217, 0.40) inset;
+}
+
+.search_bar_txt {
+    color: var(--SecondaryTextColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--ButtonFontSize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header_leftside_buttons {
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 2px 4px -2px rgba(223, 217, 217, 0.40) inset, 0px 2px 4px 0px rgba(0, 0, 0, 0.20);
+    padding: 4px;
+}
+
+/* Aside  */
+.Aside {
+    background-color: var();
+    grid-row: 2 / 4;
+    grid-column: 1 / 2;
+    background: rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20) inset, 0px -1px 4px 0px rgba(223, 217, 217, 0.40) inset;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    padding: 38px 0 0 40px;
+}
+
+.Aside_title {
+    color: var(--Primary_yellow);
+    font-family: var(--MainFontFamily);
+    font-size: var(--MainFontSize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.Aside_list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.li1 {
+    text-decoration: underline;
+}
+
+.Aside_list_txt {
+    color: var(--SecondaryTextColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--ButtonFontSize);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+/* main_card  */
+.main_card {
+    background-color: var(--MainTextColor);
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    display: flex;
+    flex-direction: column;
+}
+.main_card_img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.image_description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    background-color: var(--MainTextColor);
+}
+
+.image_description_txt {
+    color: var(--mainBackgroundColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--MainFontSize);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.image_description_button {
+    padding: 9px 50px 9px 51px;
+    background-color: var(--Primary_yellow);
+    color: var(--MainTextColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--ButtonFontSize);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+/* div4  */
+.div4 {
+    background-color: var(--MainTextColor);
+}
+.div4 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/* div5  */
+.div5 {
+    background-color: var(--MainTextColor);
+}
+.div5 img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* product_cards  */
+.product_cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.card_img_wraper {
+    background-image: url("../images/card_img.png");
+    height: 180px;
+    background-size: cover;
+    padding: 8px 0 0 8px;
+}
+
+.card_title {
+    color: var(--mainBackgroundColor);
+    font-family: var(--MainFontFamily);
+    font-size: var(--TitleFontSize);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.product_cards .image_description_button {
+    padding: 9px 10px;
+}
+
+.card_txt {
+    color: var(--MainTextColor);
+    font-family: var(--MainFontFamily);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}

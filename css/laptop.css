@@ -1,0 +1,5 @@
+@media(max-width:1300px){
+    .header_left_side{
+        column-gap: 50px;
+    }
+}

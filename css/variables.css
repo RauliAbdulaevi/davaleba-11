@@ -1,0 +1,12 @@
+:root{
+    --mainBackgroundColor: #1C5550;
+    --Primary_yellow: #C3B97F;
+    --MainTextColor: #DFD9D9;
+    --SecondaryTextColor: #91B599;
+    --MainBorderRadius: 4px;
+    --MainFontFamily: 'Inter', sans-serif;
+    --MainFontSize: 16px;
+    --TitleFontSize: 24px;
+    --SecondaryFonSize: 18px;
+    --ButtonFontSize: 14px;
+}
